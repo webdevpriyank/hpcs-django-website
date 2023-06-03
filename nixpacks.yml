@@ -9,4 +9,4 @@ install:
   - pip install -r requirements.txt
 
 start:
-  - python manage.py migrate && gunicorn {app_name}.wsgi
+  - python manage.py migrate && gunicorn website.wsgi
